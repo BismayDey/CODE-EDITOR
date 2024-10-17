@@ -110,7 +110,7 @@ body {
 .delete-button,
 .create-button,
 .save-button,
-.preview-toggle {
+.format-button {
   margin-left: 5px;
   padding: 5px 10px;
   border: none;
@@ -130,6 +130,12 @@ body {
   background-color: #ffc107;
   color: black;
 }
+
+.format-button {
+  background-color: #007bff;
+  color: white;
+}
+
 .rename-button {
   background-color: transparent;
   color: #ff4d4d;
@@ -151,6 +157,10 @@ body {
 
 .save-button:hover {
   background-color: #e0a800;
+}
+
+.format-button:hover {
+  background-color: #0056b3;
 }
 
 .vs-dark {
@@ -185,10 +195,56 @@ iframe {
   width: 100%; /* Make iframe take full width */
   height: 60vh; /* Ensure height is consistent */
 }
-.preview-toggle {
-  background-color: #28a745;
-  color: white;
+/* src/Editor.css */
+.version-control {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #444;
+  padding: 10px;
+  border-radius: 4px;
 }
-.preview-toggle:hover {
-  background-color: #218838;
+
+.version {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.restore-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.restore-button:hover {
+  background-color: #0056b3;
+}
+/* src/Editor.css */
+.settings-panel {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #444;
+  color: white;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Make sure it's on top */
+}
+
+.close-settings {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.close-settings:hover {
+  background-color: #ff1a1a;
 }
