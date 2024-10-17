@@ -1,0 +1,9 @@
+/* src/Terminal.css */
+.terminal {
+  background-color: black;
+  color: white;
+  height: 200px; /* Adjust height as necessary */
+  padding: 10px;
+  overflow-y: auto;
+  font-family: monospace;
+}
